@@ -4,12 +4,12 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import MainLayout from "../Layout/MainLayout";
-import Test from "../Test";
+import Buttons from "../Components/Buttons/Buttons";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<MainLayout />}>
-      <Route path="/" element={<Test />} />
+      <Route path="/" element={<Buttons />} />
     </Route>
   )
 );
