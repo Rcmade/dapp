@@ -1,0 +1,107 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*  Navigation style */
+
+nav.header {
+  background: #1a1a28;
+  padding: 1rem 2%;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLogoLink {
+  display: flex;
+  align-items: center;
+}
+
+.navLogoImg {
+  height: 2.25rem;
+  margin-right: 0.75rem;
+}
+.navLogoText {
+  font-weight: 600;
+  font-size: 1.75rem;
+  white-space: nowrap;
+  color: #fff;
+  align-self: center;
+}
+.ulDiv {
+  display: block;
+  width: auto;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.navUl {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 4rem;
+}
+.navLink {
+  border-bottom: 2px solid #f99c4a;
+  padding-bottom: 1px;
+}
+.navLink:hover {
+  border-bottom: 2px solid #74af97;
+}
+.navLink a:hover {
+  color: #74af97;
+}
+.navLink a {
+  color: #57ecb1;
+  padding: 0.3rem 0.7rem;
+}
+
+.threeLine {
+  display: none;
+  background: transparent;
+  border: none;
+}
+.threeLine svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: #57ecb1;
+}
+
+@media screen and (max-width: 800px) {
+  .hidemenu {
+    width: 100%;
+    display: none;
+  }
+
+  .mobileMenu {
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+    background-color: #1a1a28;
+    right: 0;
+    top: 4.5rem;
+  }
+  .navUl {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .threeLine {
+    display: block;
+    position: fixed;
+    right: 10%;
+  }
+}
